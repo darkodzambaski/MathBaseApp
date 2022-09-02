@@ -1,8 +1,104 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <style>
+           body {
+             background-image: url('https://previews.123rf.com/images/gjerome69/gjerome692003/gjerome69200300006/141348470-a-whiteboard-full-of-mathematical-formulas-educational-concept-background.jpg');
+          }
+          .main-container{
+              background-color: #FFFFFF;
+              
+          }
+          .other-container{
+              margin-top: 45px;
+          }
+          .text-center {
+            text-align: center;
+            }
+         .btn1{
+                padding: .5em 1.5em;
+                border-radius: 2em;
+                box-shadow: 5px 5px 5px rgba(105, 73, 73, 0.15);
+          }
+           .banner{
+                padding: .8em 1.5em;
+               
+          }
+           
+    </style>
+</head>
+<body>
+<div class="main-container">
+<div class="row row-no-gutters"> 
+<div class="col-sm-8" >
+         
+    <div class="banner">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-7 ">
+                    <h1>Get in touch with Math</h1>
+                    <p>Free math lessons and math help from basic math to algebra, trigonometry, calculus  and statistics. Students, teachers, parents, and everyone can find solutions to their problems.</p>
+                    <button class="btn btn-success btn1">Learn More</button>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-fluid" src="~/lib/math banner.jpg" alt="Math" height="250" width="450">
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="banner">
+        <div class="container ">
+            <div class="row ">
+             <div class="col-sm-5 ">
+                <img class="img-fluid" src="~/lib/forum.jpg" alt="Math" height="250" width="450">
+            </div>
+                <div class="col-sm-7">
+                    <h1>Discuss in Forum</h1>
+                    <p>Out Forum provides a free community for students, teachers, educators, professors, mathematicians, engineers, scientists, and hobbyists to learn and discuss mathematics and science.
+Our community is free to join and participate, and we welcome everyone from around the world to discuss math and science at all levels.</p>
+                    <a type="button" class="btn btn-success btn1" asp-area=""  asp-controller="Forum" asp-action="Index">Go to Forum</a>
+            </div>
+            
+            </div>
+            </div>
+  </div>
+
+  <div class="banner">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-7">
+                    <h1>Check your knowledge</h1>
+                    <p>Our quiz helps you to test and increase our knowledge. Free service for students, teachers, educators, professors, mathematicians, engineers, scientists, and hobbyists to learn and test mathematics.</p>
+                    <a type="button" class="btn btn-success btn1" asp-area=""  asp-controller="Quiz" asp-action="Quiz">Test Yourself</a>
+            </div>
+            <div class="col-sm-5 ">
+                <img class="img" src="~/lib/mathquiz.jpg" alt="Math" height="200" width="310">
+            </div>
+            </div>
+        </div>
+    </div>
+        
 </div>
+    <div class="col-sm-4 sidenav">
+        <div class="other-container d-flex float-end ">
+            <div class="d-grid gap-2 button-wrapper">
+                 <h4 class="text-center">MATH IS FUN</h4>
+                 <h5 class="text-center">FUN FACT OF THE DAY</h5>
+                  <img src="~/lib/funfact/Mathfun2.jpg" height="250" width="250" alt="Sample Image"/>
+            </div>
+            
+        </div>
+         <div class="other-container d-flex float-end ">
+        <div class="d-grid gap-9 button-wrapper">
+                 <h4 class="text-center">PROBLEM OF THE DAY</h4>
+                 
+                  <img src="~/lib/Problem/d2fbe61da86add1ce6929011c1c15595.jpg" height="250" width="250" alt="Sample Image"/>
+            </div>
+            </div>
+    </div>
+</div>
+</div>
+</body>
