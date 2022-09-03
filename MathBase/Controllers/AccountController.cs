@@ -35,7 +35,6 @@ namespace MathBase.Controllers
                     var user = new ApplicationUser
                     {
                         UserName = request.Email,
-                        NormalizedUserName = request.Email,
                         Email = request.Email,
                         EmailConfirmed = true,
                         PhoneNumberConfirmed = true
